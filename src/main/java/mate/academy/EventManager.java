@@ -13,6 +13,7 @@ public class EventManager {
         executorService = Executors.newFixedThreadPool(Runtime.getRuntime().availableProcessors());
         listeners = new CopyOnWriteArrayList<>();
     }
+
     public void registerListener(EventListener listener) {
         listeners.add(listener);
     }
